@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Club Neptuno - Escuela de Natacion</title>
+  <title>Club Neptuno - Escuela de Natación</title>
   <!-- Bootstrap 5 CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons CDN -->
@@ -21,11 +21,15 @@
     .bg-custom-dark {
       background-color: #0a192f;
     }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+    }
   </style>
 </head>
 <body>
 
-  <!-- BARRA DE NAVEGACION (NAVBAR) -->
+  <!-- BARRA DE NAVEGACIÓN (NAVBAR) -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold text-info fs-3" href="#"><i class="bi bi-water me-2"></i>Club Neptuno</a>
@@ -43,15 +47,87 @@
     </div>
   </nav>
 
-  <!-- SECCION PRINCIPAL (HERO) -->
+  <!-- SECCIÓN PRINCIPAL (HERO) -->
   <header class="hero-section text-center">
     <div class="container">
       <h1 class="display-3 fw-bold mb-3">Domina el Agua con Club Neptuno</h1>
-      <p class="lead fs-4 mb-4">Formacion acuAtica integral desde la iniciación infantil hasta el rendimiento competitivo.</p>
+      <p class="lead fs-4 mb-4">Formación acuática integral desde la iniciación infantil hasta el rendimiento competitivo.</p>
       <a href="#contacto" class="btn btn-info btn-lg fw-bold text-white me-2 shadow">Inscribirme Ahora</a>
       <a href="#programas" class="btn btn-outline-light btn-lg fw-bold">Ver Programas</a>
     </div>
   </header>
+
+  <!-- SECCIÓN 1: PROGRAMAS -->
+  <section id="programas" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Nuestros Programas</h2>
+        <p class="text-muted fs-5">Clases adaptadas para todas las edades y niveles de experiencia</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-emoji-smile text-info display-4 mb-3"></i>
+              <h3 class="h4 card-title fw-bold">Escuela Infantil</h3>
+              <p class="card-text text-secondary">Desarrollo de habilidades acuáticas básicas, confianza y seguridad en la piscina mediante metodología lúdica.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-person-walking text-info display-4 mb-3"></i>
+              <h3 class="h4 card-title fw-bold">Natación Jóvenes y Adultos</h3>
+              <p class="card-text text-secondary">Perfeccionamiento de técnicas de crol, espalda, pecho y mariposa, además de entrenamiento cardiovascular.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <div class="card-body text-center p-4">
+              <i class="bi bi-trophy text-info display-4 mb-3"></i>
+              <h3 class="h4 card-title fw-bold">Alto Rendimiento</h3>
+              <p class="card-text text-secondary">Preparación técnica, táctica y física avanzada para deportistas de competición y torneos regionales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: NOSOTROS -->
+  <section id="nosotros" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-bold text-primary mb-3">¿Por qué elegir Club Neptuno?</h2>
+          <p class="fs-5 text-secondary">En Club Neptuno transformamos la pasión por la natación en disciplina, salud y rendimiento. Contamos con instalaciones con temperatura controlada y un equipo técnico certificado por la federación.</p>
+          <ul class="list-unstyled fs-5 mt-4">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i>Entrenadores certificados y con experiencia nacional.</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i>Piscina semiolímpica climatizada y tratada periódicamente.</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-info me-2"></i>Planes personalizados según objetivos de salud o competencia.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 bg-white rounded shadow text-center">
+            <h3 class="h2 fw-bold text-info mb-2">+10 Años</h3>
+            <p class="text-muted fs-5 mb-4">Formando campeones dentro y fuera del agua</p>
+            <div class="row">
+              <div class="col-6">
+                <h4 class="fw-bold">500+</h4>
+                <p class="text-secondary">Alumnos Activos</p>
+              </div>
+              <div class="col-6">
+                <h4 class="fw-bold">15+</h4>
+                <p class="text-secondary">Instructores</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Bootstrap 5 JS Bundle CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
